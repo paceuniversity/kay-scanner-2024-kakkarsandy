@@ -1,0 +1,26 @@
+main {
+    // This is a sample KAY program
+    integer x := 10;
+    integer y := 20;
+    bool isGreater := False;
+
+    if (x > y) {
+        isGreater := True;
+    } else {
+        isGreater := False;
+    }
+
+    while (x < 100) {
+        x := x + 1;
+    }
+
+    // Complex operations
+    y := x *** 2;
+    isGreater := (x >= y) && (y != 0);
+
+    // Nested blocks
+    {
+        integer z := x + y;
+        z := z / 2;
+    }
+}
